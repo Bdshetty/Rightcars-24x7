@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Explore Page</title>
+    <style>
+        /* Style for the card container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow cards to wrap to the next row */
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Style for individual card */
+        .card {
+            width: calc(20% - 20px); /* Set width of each card to 20% of container width with space between */
+            margin-bottom: 20px; /* Add space between rows */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for image in the card */
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Style for text at the bottom of the card */
+        .card-text {
+            margin-top: 10px;
+            text-align: center;
+        }
+        /* Style for the book button */
+.book-btn {
+    background-color: #0647f9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #22f517;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+        function bookCar() {
+            // Get the message container element
+            var messageContainer = document.getElementById("booking-message");
+            
+            // Display the message
+            alert('Car booked');
+            messageContainer.innerHTML = "Car booked";
+        }
+    </script>
+
+<div id="booking-message"></div>
+
+    <div class="card-container">
+        <!-- First card -->
+        <div class="card">
+            <img src="./image/c10.png" alt="Image 1">
+            <div class="card-text">
+                <h4>MINI Cooper</h4>
+                <p>Rs. 42.70 Lakhs</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Second card -->
+        <div class="card">
+            <img src="./image/c2.jpeg" alt="Image 2">
+            <div class="card-text">
+                <h4>Hyundai i20</h4>
+                <p>Rs. 7.04 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Third card -->
+        <div class="card">
+            <img src="./image/c3.jpeg" alt="Image 3">
+            <div class="card-text">
+                <h4>Swift</h4>
+                <p>Rs. 5.99 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Fourth card -->
+        <div class="card">
+            <img src="./image/c4.jpeg" alt="Image 4">
+            <div class="card-text">
+                <h4>Baleno</h4>
+                <p>Rs. 6.66 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Fifth card -->
+        <div class="card">
+            <img src="./image/c5.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Fronx</h4>
+                <p>Rs. 7.52 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c6.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Astor</h4>
+                <p>Rs. 9.98 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c7.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Scorpio</h4>
+                <p>Rs. 13.59 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c8.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Polo GT</h4>
+                <p>DRs. 10.24 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c9.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Slavia</h4>
+                <p>Rs. 11.53 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c11.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>BMW i8</h4>
+                <p>Rs. 2.62 Crore</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c12.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Harrier</h4>
+                <p>Rs. 15.49 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c13.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>AMG G63</h4>
+                <p>Rs. 75.00 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c14.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Taigun</h4>
+                <p>Rs. 11.70 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c15.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Innova crysta</h4>
+                <p>Rs. 19.99 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./image/c16.jpeg" alt="Image 5">
+            <div class="card-text">
+                <h4>Alto 800</h4>
+                <p>Rs. 3.25 Lakh</p>
+                <button class="book-btn" onclick="bookCar()">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Add more cards here if needed -->
+        <script src="js/script.js"></script>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RightCars-24x7</title>
+
+    <!-- import css custome file -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+        <a href="#" class="logo">RightCars<span>24x7</span></a>
+
+        <!-- navbar section -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <!-- login button -->
+        <div id="login-btn">
+            <button type="button" class="btn">login</button>
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form -->
+    <div class="login-form-container">
+        <span class="fa-solid fa-xmark" id="close-login-btn"></span>
+        <form action="" id="login-form">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn" id="login-btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account <a href="#" id="create-account-link">create one</a></p>
+        </form>
+        <div id="success-message" style="display: none;">Login successful!</div> <!-- Message container -->
+    </div>
+    
+    <script>
+        // Select the login form, the success message, and the login button
+        var loginForm = document.getElementById('login-form');
+        var successMessage = document.getElementById('success-message');
+        var loginButton = document.getElementById('login-btn');
+        
+        // Add an event listener to the login form for form submission
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            // Display the success message
+            successMessage.style.display = 'block';
+        });
+    </script>
+    
+    
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+
+        <h1 class="home-parallax" data-speed="-2">Find your car</h1>
+        <img class="home-parallax" data-speed="5" src="./image/car0.png" alt="">
+        <a href="1.html" class="btn home-parallax" data-speed="7">explore cars</a>
+
+    </section>
+    <!-- home section end -->
+
+
+    <!-- icon section starts -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fa-solid fa-house"></i>
+            <div class="content">
+                <h3>100+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>500+</h3>
+                <p>cars sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-users"></i>
+            <div class="content">
+                <h3>2800+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <div class="content">
+                <h3>320+</h3>
+                <p>new cars</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- icon section end -->
+
+    <!-- vehical section starts-->
+    <section class="vehical" id="vehicles">
+
+        <h1 class="heading">popular <span>vehicals</span></h1>
+
+        <div class="slider">
+
+            <div class="wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="preBtn"></div>
+
+                <div class="wraper-box">
+                    <div class="box active" id="car-img1">
+                        <img src="./image/car1.png" alt="">
+                        <div class="content">
+                            <h3>Lamborghini Revuelto</h3>
+                            <div class="price"><span>price: </span>Rs. 8,89,00,000</div>
+                            <p>
+                                <span class="fa-solid fa-circle"></span>Engine:6498 cc <br>
+                                <span class="fa-solid fa-circle"></span>EngineType:V12 NA 6.5l<br>
+                                <span class="fa-solid fa-circle"></span>TopSpeed:350 Kmph<br>
+                                <span class="fa-solid fa-circle"></span>Power:1001.11 bhp<br>
+                            </p>
+                            <a href="https://www.cardekho.com/lamborghini/revuelto" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img2">
+                        <img src="./image/car2.png" alt="">
+                        <div class="content">
+                            <h3>Aston Martin DB12 Coupe</h3>
+                            <div class="price"><span>price: </span>Rs. 4,59,00,000</div>
+                            <p>
+                                <span class="fa-solid fa-circle"></span>Engine:3982 cc<br>
+                                <span class="fa-solid fa-circle"></span>EngineType:M177 biturbo V8<br>
+                                <span class="fa-solid fa-circle"></span>Speed:325 km/h<br>
+                                <span class="fa-solid fa-circle"></span>Power:670.69 bhp<br>
+                            </p>
+                            <a href="https://www.cardekho.com/overview/Aston_Martin_DB12/Aston_Martin_DB12_Coupe.htm" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img3">
+                        <img src="./image/car3.png" alt="">
+                        <div class="content">
+                            <h3>Lykan Hypersport</h3>
+                            <div class="price"><span>price: </span>Rs. 22,54,00,000</div>
+                            <p>
+                                <span class="fa-solid fa-circle"></span>Engine:3746 cc<br>
+                                <span class="fa-solid fa-circle"></span>EngineType:twin turbocharged 3.7l flat-six<br>
+                                <span class="fa-solid fa-circle"></span>Speed:395 km/h<br>
+                                <span class="fa-solid fa-circle"></span>Power:740 bhp<br>
+                            </p>
+                            <a href="https://wmotors.ae/lykan-hypersport.html" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img4">
+                        <img src="./image/car4.png" alt="">
+                        <div class="content">
+                            <h3>BMW M4 Competition</h3>
+                            <div class="price"><span>price: </span>Rs. 4,28,00,000</div>
+                            <p>
+                                <span class="fa-solid fa-circle"></span>Engine:2993 cc<br>
+                                <span class="fa-solid fa-circle"></span>EngineType:3.0 L 6-cylinder<br>
+                                <span class="fa-solid fa-circle"></span>Speed:250 km/h<br>
+                                <span class="fa-solid fa-circle"></span>Power:503 bhp<br>
+                            </p>
+                            <a href="https://www.cardekho.com/bmw/m4-competition" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img5">
+                        <img src="./image/car5.png" alt="">
+                        <div class="content">
+                            <h3>Toyota Vellfire</h3>
+                            <div class="price"><span>price: </span>Rs. 1,20,00,000</div>
+                            <p>
+                                <span class="fa-solid fa-circle"></span>Engine:2487 cc<br>
+                                <span class="fa-solid fa-circle"></span>EngineType:2.5-litre a Hybrid<br>
+                                <span class="fa-solid fa-circle"></span>Speed:170 kmph<br>
+                                <span class="fa-solid fa-circle"></span>Power:140.1bhp<br>
+                            </p>
+                            <a href="https://www.cardekho.com/toyota/vellfire" class="btn">check out</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img6">
+                        <img src="./image/car6.png" alt="">
+                        <div class="content">
+                            <h3>Mercedes-Benz AMG GLE 53</h3>
+                            <div class="price"><span>price: </span>Rs. 1,85,00,000</div>
+                            <p>
+                                <span class="fa-solid fa-circle"></span>Engine:2999 cc<br>
+                                <span class="fa-solid fa-circle"></span>EngineType:3.0-litre 6-cylinder In-lineTurbo<br>
+                                <span class="fa-solid fa-circle"></span>Speed:250 kmph<br>
+                                <span class="fa-solid fa-circle"></span>Power:435bhp<br>
+                            </p>
+                            <a href="https://www.cardekho.com/mercedes-benz/amg-gle-53" class="btn">check out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext " id="nextBtn"></div>
+            </div>
+
+
+            <div class="activeCircle">
+                <div class="fa-regular fa-solid fa-circle" id="forCar-img1"></div>
+                <div class="fa-regular fa-circle" id="forCar-img2"></div>
+                <div class="fa-regular fa-circle" id="forCar-img3"></div>
+                <div class="fa-regular fa-circle" id="forCar-img4"></div>
+                <div class="fa-regular fa-circle" id="forCar-img5"></div>
+                <div class="fa-regular fa-circle" id="forCar-img6"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- vehical section end-->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+
+        <h1 class="heading">our <span>services</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-car"></i>
+                <h3>car selling</h3>
+                <p>Find your perfect match on our lot!.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>parts repair</h3>
+                <p>Precision Repairs: Where Craftsmanship Meets Trust, One Part at a Time!.</p>
+                <a href="https://boodmo.com/" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-burst"></i>
+                <h3>car insurance</h3>
+                <p>Protect Your Ride, Protect Your Wallet. Affordable Car Insurance!.</p>
+                <a href="https://www.acko.com/car-insurance/mangalore/" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>Never Run Out of Power Again: Expert Battery Replacements.</p>
+                <a href="https://www.exidecare.com/find-exide/batteries-for-car-suv-muv" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-gas-pump"></i>
+                <h3>oil change</h3>
+                <p>Get Your Oil Changed Today and Keep Your Engine Running Strong.</p>
+                <a href="https://www.amazon.in/Car-Engine-Oils/b?ie=UTF8&node=5258095031" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>Round-the-Clock Care: Trust Us for Your Car’s Needs.</p>
+                <a href="tel:636-114-1710" class="btn">call us</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- services section end -->
+
+    <!-- featured section starts -->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>featured</span> cars</h1>
+
+        <div class="featured-slider">
+
+            <div class="featured-wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="fPreBtn"></div>
+
+                <div class="featured-wrapper2">
+                    <div class="featured-wrapper-box">
+
+                        <div class="box active">
+                            <img src="./image/car7.png" alt="">
+                            <h3>Toyota Land Cruiser</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 2,10,00,000</div>
+                            <a href="https://www.carwale.com/toyota-cars/land-cruiser/" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./image/car8.png" alt="">
+                            <h3>Toyota Fortuner Legender</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 43,66,000</div>
+                            <a href="https://www.carwale.com/toyota-cars/fortuner-legender/" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./image/car9.png" alt="">
+                            <h3>Toyota Urban Cruiser Taisor</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 7,43,000</div>
+                            <a href="https://www.carwale.com/toyota-cars/taisor/" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./image/car10.png" alt="">
+                            <h3>Toyota Innova Hycross</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs.19,77,000</div>
+                            <a href="https://www.carwale.com/toyota-cars/innova-hycross/" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./image/car11.png" alt="">
+                            <h3>Maruti Dzire</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 9,39,000</div>
+                            <a href="https://www.carwale.com/maruti-suzuki-cars/dzire/" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./image/car12.png" alt="">
+                            <h3>Maruti Wagon R</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 5,54,000</div>
+                            <a href="https://www.cardekho.com/maruti/wagon-r" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./image/car13.png" alt="">
+                            <h3>Skoda Superb</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 54,00,000</div>
+                            <a href="https://www.carwale.com/skoda-cars/superb/" class="btn">check out</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./image/car14.png" alt="">
+                            <h3>MG Hector</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="price">Rs. 21,95,000</div>
+                            <a href="https://www.cardekho.com/mg/hector" class="btn">check out</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext" id="fNextBtn"></div>
+            </div>
+
+            <div class="fActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+  
+    </section> 
+    <section style=" max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;">
+        <h3 style="margin-top: 0;
+        color: #333;   font-size: 30px; font-weight: bold;">Subscribe for Latest Updates</h3>
+        <p style=" color: #666;">Connecting Roads, Connecting People: Choose Us.</p>
+        <form id="subscribeForm">
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <input type="submit" style="background-color:dodgerblue ; font-size: large; padding: 2px; border-radius: 5px;" value="Subscribe">
+        </form>
+        <p class="success-message" id="successMessage" style="font-weight: 600; font-size: 20px;">Signup successful! Thank you for subscribing.</p>
+    </section>
+    <script>
+  
+        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+    
+         
+            document.getElementById("successMessage").style.display = "block";
+    
+        });
+    
+        // Function to send form data to server using AJAX (Optional)
+        function sendDataToServer(email) {
+            // Your AJAX code here to send form data to server
+        }
+    </script>
+    <!-- subscribe section end -->
+
+    <!-- review section starts -->
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading">client's <span>review</span></h1>
+
+        <div class="review-slider">
+            <div class="fa-solid fa-angle-left rPreNext" id="rPreBtn"></div>
+            <div class="review-wrapper">
+
+                <div class="review-wrapper-box">
+
+                    <div class="box active">
+                        <img src="./image/img1.jpg" alt="">
+                        <div class="content">
+                            <p>"Five stars for RightCars! Friendly staff, great prices, and an easy buying process."</p>
+                            <h3>Sudhanshu</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./image/img2.jpg" alt="">
+                        <div class="content">
+                            <p>"Impressed with the professionalism and attention to details. They made finding my dream car a reality. Thanks!"</p>
+                            <h3>Gayatri Bhardwaj</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./image/img3.jpg" alt="">
+                        <div class="content">
+                            <p>"The team was friendly and efficient, making my car-buying experience a breeze. Highly recommend!."</p>
+                            <h3>Shirley Setia</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./image/img4.jpg" alt="">
+                        <div class="content">
+                            <p>"The team was attentive and made me feel valued as a customer. Will be returning for future purchases!."</p>
+                            <h3>Vaishak</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./image/img5.jpg" alt="">
+                        <div class="content">
+                            <p>"I cannot speak highly enough about the service I received. Thanks for exceeding my expectations!."</p>
+                            <h3>Megan Fox</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="./image/img6.jpg" alt="">
+                        <div class="content">
+                            <p>"Exceptional service from start to finish!. I'm a customer for life!."</p>
+                            <h3>Aryan shetty</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fa-solid fa-angle-right rPreNext" id="rNextBtn"></div>
+
+            <div class="rActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+            </div>
+        </div>
+    </section>
+    <!-- review section end -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.40060563931!2d74.7696615018415!3d12.922979283820597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1713031644936!5m2!1sen!2sin" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form id="contactForm">
+                <h3>Get in Touch</h3>
+                <input type="text" name="name" id="name" placeholder="Name" class="box">
+                <input type="email" name="email" id="email" placeholder="Email" class="box">
+                <input type="tel" name="phone" id="phone" placeholder="Phone" class="box">
+                <textarea name="message" id="message" class="box" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            <div class="submitted-data" id="submittedData">
+                <h3>Submitted Data</h3>
+                <p><strong>Name:</strong> <span id="submittedName"></span></p>
+                <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="submittedPhone"></span></p>
+                <p><strong>Message:</strong> <span id="submittedMessage"></span></p>
+            </div>
+   </div>
+    </section>         
+            <script>
+                // JavaScript to handle form submission and display submitted data
+                document.getElementById("contactForm").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent default form submission behavior
+            
+                    // Get form data
+                    const formData = {
+                        name: document.getElementById("name").value,
+                        email: document.getElementById("email").value,
+                        phone: document.getElementById("phone").value,
+                        message: document.getElementById("message").value
+                    };
+            
+                    // Display submitted data
+                    document.getElementById("submittedName").textContent = formData.name;
+                    document.getElementById("submittedEmail").textContent = formData.email;
+                    document.getElementById("submittedPhone").textContent = formData.phone;
+                    document.getElementById("submittedMessage").textContent = formData.message;
+            
+                    // Hide the form and display the submitted data
+                    document.getElementById("contactForm").style.display = "none";
+                    document.getElementById("submittedData").style.display = "block";
+                });
+            </script>
+    <!-- contact section end -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+
+        <div class="footer-box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="https://maps.app.goo.gl/nwSoLBe6LXJySiUw6"><i class="fa-solid fa-location-dot"></i> Mangalore</a>
+                <a href="https://maps.app.goo.gl/E28cj23jqgNEmEu49"><i class="fa-solid fa-location-dot"></i> Udupi</a>
+                <a href="https://maps.app.goo.gl/9SbRgVLWyPKL9kKu6"><i class="fa-solid fa-location-dot"></i> Manipal</a>
+                <a href="https://maps.app.goo.gl/gveqoPNvkZrt6SYQA"><i class="fa-solid fa-location-dot"></i> Moodabidri</a>
+                <a href="https://maps.app.goo.gl/oTVG91g3LuYtkBmv7"><i class="fa-solid fa-location-dot"></i>Kasaragod</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fa-solid fa-arrow-right"></i> home</a>
+                <a href="#vehicles"><i class="fa-solid fa-arrow-right"></i> vehicles</a>
+                <a href="#services"><i class="fa-solid fa-arrow-right"></i> services</a>
+                <a href="#featured"><i class="fa-solid fa-arrow-right"></i> featured</a>
+                <a href="#reviews"><i class="fa-solid fa-arrow-right"></i> reviews</a>
+                <a href="#contact"><i class="fa-solid fa-arrow-right"></i> contact</a>
+            </div>
+            
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="tel:+91 636-114-1710"><i class="fa-solid fa-phone"></i> +91 63611 41710</a>
+                <a href="tel:+91 961-956-0105"><i class="fa-solid fa-phone"></i> +91 96195 60105</a>
+                <a href="mailto:nnm22is034@nmamit.in"><i class="fa-solid fa-envelope"></i> rightcars@gmail.com</a>
+                <a href="https://maps.app.goo.gl/nwSoLBe6LXJySiUw6"><i class="fa-solid fa-location-dot"></i> Mangalore, India</a>
+            </div>
+
+            <div class="box">
+                <h3>social media</h3>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i> pinterest</a>
+            </div>
+
+        </div>
+        
+        <div class="copyright">copyright &copy; | all rights reserved</div>
+    </section>
+    <!-- footer section end -->
+
+
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
+    <!-- import javascript custome file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
